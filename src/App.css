@@ -1,0 +1,145 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #f7f7fa;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 10px 0;
+  color: #777;
+  cursor: pointer;
+}
+
+.menu li.active {
+  color: #337ab7;
+  font-weight: bold;
+}
+
+.bottom-menu {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.bottom-menu li {
+  padding: 10px 0;
+  color: #777;
+  cursor: pointer;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: #333;
+}
+
+.new-meeting-button {
+  background-color: #337ab7;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.search-bar {
+  flex: 1;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.user-profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #9c27b0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Meetings List */
+.meetings-nav {
+  margin-bottom: 20px;
+}
+
+.meetings-nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #777;
+}
+
+.meetings-nav a.active {
+  color: #337ab7;
+  font-weight: bold;
+}
+
+.meetings-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.meetings-table th,
+.meetings-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.meetings-table th {
+  font-weight: bold;
+  color: #555;
+}
+
+.meetings-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
